@@ -9,7 +9,7 @@ public class AuthenticationQueryHandler(IApplicationUnitOfWork unitOfWork)
                                       CancellationToken cancellationToken = default)
     {
         var user = await _uow.Users.Where(x => x.UserName == request.Username && x.Password == request.Password)
-                                   .Select(x => new UserDto( x.FirstName, x.LastName , x.Email))
+                                   .Select(x => new UserDto(x.FirstName, x.LastName , x.Mobile , x.Email))
                                    .FirstOrDefaultAsync(cancellationToken);
         return user ?? null;
     }
