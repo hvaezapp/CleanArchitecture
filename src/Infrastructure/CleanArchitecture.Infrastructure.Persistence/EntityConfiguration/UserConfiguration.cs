@@ -1,9 +1,4 @@
-﻿using CleanArchitecture.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-namespace CleanArchitecture.Infrastructure.Persistence.EntityConfiguration;
-
+﻿namespace CleanArchitecture.Infrastructure.Persistence.EntityConfiguration;
 public class UserConfiguration : IEntityTypeConfiguration<User>
 {
     public void Configure(EntityTypeBuilder<User> builder)

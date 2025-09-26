@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Reflection;
-
-namespace CleanArchitecture.Infrastructure.Persistence.Context;
+﻿namespace CleanArchitecture.Infrastructure.Persistence.Context;
 
 public partial class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
     : DbContext(options)

@@ -1,7 +1,4 @@
-﻿using CleanArchitecture.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-
-namespace CleanArchitecture.Infrastructure.Persistence.UnitOfWork;
+﻿namespace CleanArchitecture.Infrastructure.Persistence.UnitOfWork;
 
 public partial class ApplicationUnitOfWork
 {

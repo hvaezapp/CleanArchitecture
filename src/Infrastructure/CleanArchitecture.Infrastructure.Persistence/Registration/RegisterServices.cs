@@ -1,11 +1,4 @@
-﻿using CleanArchitecture.Application.Common;
-using CleanArchitecture.Infrastructure.Persistence.Context;
-using CleanArchitecture.Infrastructure.Persistence.UnitOfWork;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace CleanArchitecture.Infrastructure.Persistence.Registration;
+﻿namespace CleanArchitecture.Infrastructure.Persistence.Registration;
 
 public static class RegisterServices
 {

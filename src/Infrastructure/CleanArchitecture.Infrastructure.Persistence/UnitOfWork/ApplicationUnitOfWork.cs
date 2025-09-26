@@ -1,8 +1,4 @@
-﻿using CleanArchitecture.Application.Common;
-using CleanArchitecture.Infrastructure.Persistence.Context;
-using Microsoft.EntityFrameworkCore;
-
-namespace CleanArchitecture.Infrastructure.Persistence.UnitOfWork;
+﻿namespace CleanArchitecture.Infrastructure.Persistence.UnitOfWork;
 
 public partial class ApplicationUnitOfWork(ApplicationDbContext applicationDbContext)
     : IApplicationUnitOfWork

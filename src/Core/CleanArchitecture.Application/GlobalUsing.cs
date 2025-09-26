@@ -6,3 +6,4 @@ global using CleanArchitecture.Domain.Entities;
 global using CleanArchitecture.Application.Common.Behaviours;
 global using Microsoft.Extensions.DependencyInjection;
 global using System.Reflection;
+global using CleanArchitecture.Domain.Enums;

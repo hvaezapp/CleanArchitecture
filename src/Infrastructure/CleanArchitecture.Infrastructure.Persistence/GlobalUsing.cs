@@ -1,0 +1,9 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using System.Reflection;
+global using CleanArchitecture.Domain.Entities;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using CleanArchitecture.Application.Common;
+global using CleanArchitecture.Infrastructure.Persistence.Context;
+global using CleanArchitecture.Infrastructure.Persistence.UnitOfWork;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
