@@ -1,0 +1,8 @@
+﻿global using CleanArchitecture.Application.Common;
+global using MediatR;
+global using Microsoft.EntityFrameworkCore;
+global using FluentValidation;
+global using CleanArchitecture.Domain.Entities;
+global using CleanArchitecture.Application.Common.Behaviours;
+global using Microsoft.Extensions.DependencyInjection;
+global using System.Reflection;

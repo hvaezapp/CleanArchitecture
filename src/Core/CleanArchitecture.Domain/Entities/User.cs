@@ -1,11 +1,23 @@
 ﻿namespace CleanArchitecture.Domain.Entities;
 public class User : BaseEntity
 {
-    public string FirstName { get; set; } = null!;
-    public string LastName { get; set; } = null!;
-    public string Email { get; set; } = null!;
-    public string UserName { get; set; } = null!;
-    public string Password { get; set; } = null!;
-    public Address Address { get; set; } = null!;
-    public Gender Gender { get; set; }
+    #region props
+    public string FirstName { get; private set; } = null!;
+    public string LastName { get; private set; } = null!;
+    public string Email { get; private set; } = null!;
+    public string UserName { get; private set; } = null!;
+    public string Password { get; private set; } = null!;
+    public Address Address { get; private set; } = null!;
+    public Gender Gender { get; private set; }
+    #endregion
+
+    #region ctors
+    public User(string? firstName, string? lastName, string? email)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Email = email;
+    }
+    #endregion
+
 }

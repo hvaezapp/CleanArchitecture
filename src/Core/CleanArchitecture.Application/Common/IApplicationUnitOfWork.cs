@@ -1,7 +1,4 @@
-﻿using CleanArchitecture.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-
-namespace CleanArchitecture.Application.Common;
+﻿namespace CleanArchitecture.Application.Common;
 
 public interface IUnitOfWork : IDisposable, IAsyncDisposable
 {
