@@ -18,6 +18,20 @@ public class User : BaseEntity
         LastName = lastName;
         Email = email;
     }
+
+    public User(string? firstName, string? lastName,
+                string? email, string? username,
+                string? password, Gender gender)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Email = email;
+        UserName = username;
+        Password = password;
+        Gender = gender;
+    }
+  
+
     #endregion
 
 }
