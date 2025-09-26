@@ -2,7 +2,7 @@
 
 namespace CleanArchitecture.Application.Authentication.Commands.UserRegister;
 
-public class AuthenticationCommandHandler(IApplicationUnitOfWork unitOfWork , ISmsAdapter smsAdapter)
+public class UserRegisterCommandHandler(IApplicationUnitOfWork unitOfWork , ISmsAdapter smsAdapter)
     : IRequestHandler<UserRegisterCommand, Guid>
 {
     private readonly IApplicationUnitOfWork _uow = unitOfWork;

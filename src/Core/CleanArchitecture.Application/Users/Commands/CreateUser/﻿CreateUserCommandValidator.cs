@@ -5,23 +5,19 @@ public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
     public CreateUserCommandValidator()
     {
         RuleFor(u => u.FirstName)
-               .NotEmpty().WithMessage("this field is required")
-               .MaximumLength(50).WithMessage("first name must be less than 50");
-
+            .NotEmpty().WithMessage("First name is required")
+            .MaximumLength(50).WithMessage("First name cannot exceed 50 characters");
 
         RuleFor(u => u.LastName)
-               .NotEmpty().WithMessage("this field is required")
-               .MaximumLength(50).WithMessage("last name must be less than 50");
-
+            .NotEmpty().WithMessage("Last name is required")
+            .MaximumLength(50).WithMessage("Last name cannot exceed 50 characters");
 
         RuleFor(u => u.Mobile)
-            .NotEmpty().WithMessage("This field is required")
-            .Length(11).WithMessage("Mobile number must be exactly 11 digits")
-            .Matches(@"^\d{11}$").WithMessage("Mobile number must contain only digits");
-
+            .NotEmpty().WithMessage("Mobile is required")
+            .Matches(@"^09\d{9}$").WithMessage("Mobile must start with 09 and be 11 digits long");
 
         RuleFor(u => u.Email)
-            .NotEmpty().WithMessage("This field is required")
+            .NotEmpty().WithMessage("Email is required")
             .EmailAddress().WithMessage("Invalid email format");
     }
 }
