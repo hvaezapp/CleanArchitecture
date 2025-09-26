@@ -1,4 +1,6 @@
-﻿namespace CleanArchitecture.Infrastructure.SmsProvider;
+﻿using System.Net.Http;
+
+namespace CleanArchitecture.Infrastructure.SmsProvider;
 
 internal class SmsAdapter : ISmsAdapter
 {
