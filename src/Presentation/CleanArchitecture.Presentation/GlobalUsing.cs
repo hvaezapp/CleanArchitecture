@@ -1,0 +1,9 @@
+﻿global using CleanArchitecture.Presentation.Filter;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using CleanArchitecture.Application.Common.Exceptions;
+global using CleanArchitecture.Application.Registration;
+global using CleanArchitecture.Infrastructure.Registration;
+global using CleanArchitecture.Infrastructure.Persistence.Registration;
+global using CleanArchitecture.Presentation.Registration;

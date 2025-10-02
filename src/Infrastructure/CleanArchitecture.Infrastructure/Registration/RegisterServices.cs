@@ -1,8 +1,4 @@
-﻿using CleanArchitecture.Application.Common;
-using CleanArchitecture.Infrastructure.SmsProvider;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
+﻿
 
 namespace CleanArchitecture.Infrastructure.Registration;
 

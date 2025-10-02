@@ -4,3 +4,6 @@ global using Polly;
 global using Polly.CircuitBreaker;
 global using Polly.Fallback;
 global using Polly.Retry;
+global using CleanArchitecture.Infrastructure.SmsProvider;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
