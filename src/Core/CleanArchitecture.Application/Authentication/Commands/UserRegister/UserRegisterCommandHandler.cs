@@ -1,6 +1,4 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-
-namespace CleanArchitecture.Application.Authentication.Commands.UserRegister;
+﻿namespace CleanArchitecture.Application.Authentication.Commands.UserRegister;
 
 public class UserRegisterCommandHandler(IApplicationUnitOfWork unitOfWork , ISmsAdapter smsAdapter)
     : IRequestHandler<UserRegisterCommand, Guid>
@@ -19,7 +17,7 @@ public class UserRegisterCommandHandler(IApplicationUnitOfWork unitOfWork , ISms
         await _uow.SaveChangesAsync(cancellationToken);
 
         // send registration sms to user
-         await _smsAdapter.SendAsync(user.Mobile, $"Welcome {user},Your Registation Successfull");
+        await _smsAdapter.SendAsync(user.Mobile, $"Welcome {user},Your Registation Successfull");
 
         return user.Id;
     }

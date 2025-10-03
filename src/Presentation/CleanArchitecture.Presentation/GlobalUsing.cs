@@ -7,3 +7,7 @@ global using CleanArchitecture.Application.Registration;
 global using CleanArchitecture.Infrastructure.Registration;
 global using CleanArchitecture.Infrastructure.Persistence.Registration;
 global using CleanArchitecture.Presentation.Registration;
+global using CleanArchitecture.Application.Authentication.Commands.UserRegister;
+global using CleanArchitecture.Application.Authentication.Queries.UserLogin;
+global using CleanArchitecture.Application.Users.Commands.CreateUser;
+global using CleanArchitecture.Application.Users.Queries.GetUser;

@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-
-namespace CleanArchitecture.Domain.Entities;
+﻿namespace CleanArchitecture.Domain.Entities;
 public class User : BaseEntity
 {
     #region props

@@ -1,6 +1,4 @@
-﻿using CleanArchitecture.Domain.ValueObjects;
-
-namespace CleanArchitecture.Application.Authentication.Commands.UserRegister;
+﻿namespace CleanArchitecture.Application.Authentication.Commands.UserRegister;
 
 public class UserRegisterCommandValidator : AbstractValidator<UserRegisterCommand>
 {
